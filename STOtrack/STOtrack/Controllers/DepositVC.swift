@@ -1,15 +1,8 @@
-//
-//  DepositVC.swift
-//  STOtrack
-//
-//  Created by Norman Buruchara on 9/19/18.
-//  Copyright © 2018 Norman Buruchara. All rights reserved.
-//
 
 import UIKit
 
 protocol depositSentBack {
-    func dataSentBack (deposit: String)
+    func dataSentBack (deposit: Double, orgName: String)
 }
 
 class DepositVC: UIViewController {
@@ -17,11 +10,17 @@ class DepositVC: UIViewController {
     var delegate : depositSentBack?
     
     @IBOutlet weak var depositedAmount: UITextField!
+    @IBOutlet weak var orgName: UILabel!
+    
+    var amountPassed:Double = 0.0
+    var namePassed: String = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        orgName.text! = namePassed
 
-      
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,12 +33,10 @@ class DepositVC: UIViewController {
     
     }
     
-    
     @IBAction func depositButtonPressed(_ sender: Any) {
-        delegate?.dataSentBack(deposit: depositedAmount.text!)
+        let depoAmount = Double(depositedAmount.text!)
+        delegate?.dataSentBack(deposit: depoAmount!, orgName: namePassed)
         dismiss(animated: true, completion: nil)
     }
     
-
-
 }

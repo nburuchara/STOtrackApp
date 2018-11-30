@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E34696821A8F1B7007673B7 /* WithdrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34696721A8F1B7007673B7 /* WithdrawVC.swift */; };
+		4E394E4D219A98E100F5815E /* OrgDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E394E4C219A98E100F5815E /* OrgDetails.swift */; };
+		4E394E4F219A992500F5815E /* Organizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E394E4E219A992500F5815E /* Organizations.swift */; };
 		4E6F4A9E2166FFAE00CD45D3 /* ListOfOrgsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F4A9D2166FFAE00CD45D3 /* ListOfOrgsVC.swift */; };
 		4E98E30121517BEE0091F8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98E30021517BEE0091F8D6 /* AppDelegate.swift */; };
 		4E98E30321517BEE0091F8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98E30221517BEE0091F8D6 /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		15CA56FD20243FCF57828773 /* Pods-STOtrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STOtrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STOtrack/Pods-STOtrack.debug.xcconfig"; sourceTree = "<group>"; };
+		4E34696721A8F1B7007673B7 /* WithdrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawVC.swift; sourceTree = "<group>"; };
+		4E394E4C219A98E100F5815E /* OrgDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgDetails.swift; sourceTree = "<group>"; };
+		4E394E4E219A992500F5815E /* Organizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizations.swift; sourceTree = "<group>"; };
 		4E6F4A9D2166FFAE00CD45D3 /* ListOfOrgsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfOrgsVC.swift; sourceTree = "<group>"; };
 		4E98E2FD21517BEE0091F8D6 /* STOtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STOtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E98E30021517BEE0091F8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		4E98E31521518BFE0091F8D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E394E4C219A98E100F5815E /* OrgDetails.swift */,
+				4E394E4E219A992500F5815E /* Organizations.swift */,
 				4E98E32A2152B08E0091F8D6 /* OrgInformation.swift */,
 			);
 			path = Model;
@@ -131,6 +139,7 @@
 				4E98E32121523F040091F8D6 /* DISC Org Members */,
 				4E98E32021523EFB0091F8D6 /* DISC Execs */,
 				4E98E30221517BEE0091F8D6 /* ViewController.swift */,
+				4E34696721A8F1B7007673B7 /* WithdrawVC.swift */,
 				4E98E31C2151A8130091F8D6 /* ListOrgsVC.swift */,
 				4E98E31E2151ACB20091F8D6 /* DISC Orgs.swift */,
 				4E98E31A2151A58A0091F8D6 /* OrgPageVC.swift */,
@@ -272,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E34696821A8F1B7007673B7 /* WithdrawVC.swift in Sources */,
 				4E98E31F2151ACB20091F8D6 /* DISC Orgs.swift in Sources */,
 				4E98E32521523F4D0091F8D6 /* HomeVC.swift in Sources */,
+				4E394E4F219A992500F5815E /* Organizations.swift in Sources */,
 				4E98E31B2151A58A0091F8D6 /* OrgPageVC.swift in Sources */,
 				4E98E30321517BEE0091F8D6 /* ViewController.swift in Sources */,
 				4E98E32321523F300091F8D6 /* LogInVC.swift in Sources */,
@@ -284,6 +295,7 @@
 				4E98E32B2152B08E0091F8D6 /* OrgInformation.swift in Sources */,
 				4E98E31D2151A8130091F8D6 /* ListOrgsVC.swift in Sources */,
 				4E98E3292152A2500091F8D6 /* DepositVC.swift in Sources */,
+				4E394E4D219A98E100F5815E /* OrgDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
