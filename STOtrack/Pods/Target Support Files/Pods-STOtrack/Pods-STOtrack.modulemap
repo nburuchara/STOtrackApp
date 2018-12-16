@@ -1,0 +1,6 @@
+framework module Pods_STOtrack {
+  umbrella header "Pods-STOtrack-umbrella.h"
+
+  export *
+  module * { export * }
+}
