@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LogInVC: UIViewController {
+class LogInVC: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var orgName: UITextField!
     @IBOutlet weak var unitNumber: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -23,7 +24,16 @@ class LogInVC: UIViewController {
         unitNumber.text! = ""
         passwordField.text! = ""
         
+        
+        self.orgName.delegate = self
+        self.unitNumber.delegate = self
+        self.passwordField.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    } 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,6 +76,8 @@ class LogInVC: UIViewController {
         } else if (orgName.text! == "GLOW" || orgName.text == "Gay Lesbian Or Whatever" && unitNumber.text! == "\(116)" && passwordField.text! == "glow2018") {
             performSegue(withIdentifier: "memberLogin", sender: self)
         } else if (orgName.text! == "SOMOS" || orgName.text == "Somos" && unitNumber.text! == "\(117)" && passwordField.text! == "somos2018") {
+            performSegue(withIdentifier: "memberLogin", sender: self)
+        } else if (orgName.text! == "1" && unitNumber.text! == "2" && passwordField.text! == "3") {
             performSegue(withIdentifier: "memberLogin", sender: self)
         }
         else {

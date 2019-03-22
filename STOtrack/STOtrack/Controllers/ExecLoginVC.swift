@@ -8,17 +8,22 @@
 
 import UIKit
 
-class ExecLoginVC: UIViewController {
+class ExecLoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userName.delegate = self
+        self.userPassword.delegate = self
 
-        
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 
     @IBAction func loginButtonPressed(_ sender: Any) {
         if (userName.text! == "willia16" && userPassword.text! == "exec9018") {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="111" y="181" width="153" height="256"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to STOtrack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-ye-7qd">
-                                <rect key="frame" x="37" y="467" width="300" height="35"/>
+                                <rect key="frame" x="16" y="467" width="343" height="35"/>
                                 <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,10 +30,10 @@
                         <color key="backgroundColor" red="1" green="0.75686274509999996" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nns-Rg-1Ol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="EG1-T9-MDJ"/>
-                            <constraint firstItem="cO5-ye-7qd" firstAttribute="top" secondItem="nns-Rg-1Ol" secondAttribute="bottom" constant="139" id="Xmo-Nn-XPO"/>
-                            <constraint firstItem="cO5-ye-7qd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="eiv-kn-CUf"/>
+                            <constraint firstItem="cO5-ye-7qd" firstAttribute="top" secondItem="nns-Rg-1Ol" secondAttribute="bottom" constant="30" id="Xmo-Nn-XPO"/>
+                            <constraint firstItem="cO5-ye-7qd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eiv-kn-CUf"/>
                             <constraint firstItem="nns-Rg-1Ol" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="nbi-3y-O0a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cO5-ye-7qd" secondAttribute="trailing" constant="38" id="p4h-vD-pHi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cO5-ye-7qd" secondAttribute="trailing" constant="16" id="p4h-vD-pHi"/>
                             <constraint firstItem="cO5-ye-7qd" firstAttribute="top" secondItem="nns-Rg-1Ol" secondAttribute="bottom" constant="30" id="tPj-Ly-LZG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cO5-ye-7qd" secondAttribute="bottom" constant="165" id="zGS-a9-9e6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nns-Rg-1Ol" secondAttribute="trailing" constant="111" id="zX0-5P-rVW"/>

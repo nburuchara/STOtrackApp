@@ -12,6 +12,7 @@
 		4E02288B21B82C3E0009BCEB /* NewPurchaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02288A21B82C3E0009BCEB /* NewPurchaseVC.swift */; };
 		4E1A95DE21B5B39B00282939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E1A95DD21B5B39B00282939 /* GoogleService-Info.plist */; };
 		4E34696821A8F1B7007673B7 /* WithdrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34696721A8F1B7007673B7 /* WithdrawVC.swift */; };
+		4E3580F6223C73B60025606C /* EvaluationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3580F5223C73B60025606C /* EvaluationForm.swift */; };
 		4E394E4D219A98E100F5815E /* OrgDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E394E4C219A98E100F5815E /* OrgDetails.swift */; };
 		4E394E4F219A992500F5815E /* Organizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E394E4E219A992500F5815E /* Organizations.swift */; };
 		4E42EA3521C3BAAB001ACE77 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E42EA3221C3BAAA001ACE77 /* ProgressHUD.bundle */; };
@@ -51,6 +52,7 @@
 		4E02288A21B82C3E0009BCEB /* NewPurchaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPurchaseVC.swift; sourceTree = "<group>"; };
 		4E1A95DD21B5B39B00282939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E34696721A8F1B7007673B7 /* WithdrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawVC.swift; sourceTree = "<group>"; };
+		4E3580F5223C73B60025606C /* EvaluationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationForm.swift; sourceTree = "<group>"; };
 		4E394E4C219A98E100F5815E /* OrgDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgDetails.swift; sourceTree = "<group>"; };
 		4E394E4E219A992500F5815E /* Organizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizations.swift; sourceTree = "<group>"; };
 		4E42EA3121C3BAA6001ACE77 /* STOtrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STOtrack-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				4E98E32421523F4D0091F8D6 /* HomeVC.swift */,
 				4E02288821B8258D0009BCEB /* PurchasesVC.swift */,
 				4E02288A21B82C3E0009BCEB /* NewPurchaseVC.swift */,
+				4E3580F5223C73B60025606C /* EvaluationForm.swift */,
 			);
 			path = "DISC Org Members";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				4E98E32521523F4D0091F8D6 /* HomeVC.swift in Sources */,
 				4E394E4F219A992500F5815E /* Organizations.swift in Sources */,
 				4E98E31B2151A58A0091F8D6 /* OrgPageVC.swift in Sources */,
+				4E3580F6223C73B60025606C /* EvaluationForm.swift in Sources */,
 				4E02288B21B82C3E0009BCEB /* NewPurchaseVC.swift in Sources */,
 				4E98E30321517BEE0091F8D6 /* ViewController.swift in Sources */,
 				4E98E32321523F300091F8D6 /* LogInVC.swift in Sources */,
@@ -507,7 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR9Y442P54;
 				INFOPLIST_FILE = "STOtrack/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,7 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR9Y442P54;
 				INFOPLIST_FILE = "STOtrack/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

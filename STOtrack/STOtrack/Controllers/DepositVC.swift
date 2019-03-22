@@ -7,7 +7,7 @@ protocol depositSentBack {
     func dataSentBack (deposit: Double, orgName: String)
 }
 
-class DepositVC: UIViewController {
+class DepositVC: UIViewController, UITextFieldDelegate {
 
     
     var delegate : depositSentBack?
@@ -25,7 +25,13 @@ class DepositVC: UIViewController {
         ref = Database.database().reference()
         orgName.text! = namePassed
         
+        self.depositedAmount.delegate = self
 
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
     override func didReceiveMemoryWarning() {

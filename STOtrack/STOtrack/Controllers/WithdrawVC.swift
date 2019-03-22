@@ -8,7 +8,7 @@ protocol withdrawSentBack {
 }
 
 
-class WithdrawVC: UIViewController {
+class WithdrawVC: UIViewController, UITextFieldDelegate {
     
     var delegate : withdrawSentBack?
     var ref: DatabaseReference!
@@ -23,8 +23,13 @@ class WithdrawVC: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         orgName.text! = oNamePassed
+        self.withdrawAmount.delegate = self
         
-        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func withdrawButtonPressed(_ sender: Any) {

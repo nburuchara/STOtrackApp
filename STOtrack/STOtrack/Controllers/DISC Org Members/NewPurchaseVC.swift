@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class NewPurchaseVC: UIViewController {
+class NewPurchaseVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var addItemsBought: UITextField!
     @IBOutlet weak var nameOfOrg: UILabel!
     
@@ -20,8 +20,13 @@ class NewPurchaseVC: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         nameOfOrg.text! = namePassed
+        self.addItemsBought.delegate = self
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func addPurchaseButtonPressed(_ sender: Any) {
